@@ -11,18 +11,18 @@ namespace Assets.Source
         private CharacterController _controller;
         public AnimationClip Idle;
         public AnimationClip Run;
-        private Attack _attack;
+        private Player _player;
 
         public void Awake()
         {
             _controller = GetComponent<CharacterController>();
             Position = transform.position;
-            _attack = GetComponent<Attack>();
+            _player = GetComponent<Player>();
         }
 
         public void Update () {
 
-            if (_attack.IsAttacking || _attack.IsDying)
+            if (_player.IsAttacking || _player.IsDying)
                 return;
 
             if (Input.GetMouseButton(0))
