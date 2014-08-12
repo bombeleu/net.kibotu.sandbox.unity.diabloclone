@@ -47,7 +47,7 @@ namespace Assets.Source
 
         internal void MovePosition()
         {
-            if (Vector3.Distance(transform.position, Position) > 1.3)
+            if (Vector3.Distance(transform.position, Position) > 1)
             {
                 var rot = Quaternion.LookRotation(Position - transform.position);
                 rot.x = transform.rotation.x;
