@@ -1,5 +1,4 @@
-﻿using System.Net.Configuration;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Assets.Source
 {
